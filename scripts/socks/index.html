@@ -1,85 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
+ <head>
   <!-- Tell IE to behave like modern browser, not like obsolete buggy crap -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="https://alextikhonov.github.io/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="https://cdn.hhgateway.com/static/lib/fa/6.1.0/pro/css/brands.min.css">
-
   <title>Self-hosted socks5 server in a single command on Ubuntu</title>
-  
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
-
 </head>
-
-
-  <body>
-
- 
-
-
-    <div class="page-content">
+<body>
+  <div class="page-content">
       <div class="wrapper">
         <p>Create self-hosted <a href="https://en.wikipedia.org/wiki/SOCKS">socks5</a> server in a single command on <a href="https://en.wikipedia.org/wiki/Ubuntu">Ubuntu Server</a>.</p>
-
-
 <h1 id="socks5">socks5</h1>
 <p><code class="language-plaintext highlighter-rouge">curl https://alextikhonov.github.io/scripts/socks/ubuntu.txt | sudo bash</code></p>
-
 <p>If you would like to manually set port and/or password:</p>
-
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PORT</span><span class="o">=</span>8080<span class="p">;</span> <span class="nb">export </span><span class="nv">PASSWORD</span><span class="o">=</span>mypass
 curl https://alextikhonov.github.io/scripts/socks/ubuntu.txt | <span class="nb">sudo</span> <span class="nt">--preserve-env</span> bash
 </code></pre></div></div>
-
 <p>This creates self-hosted <a href="https://en.wikipedia.org/wiki/SOCKS">SOCKS5</a> server powered by <a href="http://www.inet.no/dante/">Dante</a>. Supported Linux distributions:</p>
-
 <ul>
   <li>Ubuntu 16.04 Xenial</li>
   <li>Ubuntu 18.04 Bionic</li>
   <li>Ubuntu 20.04 Focal</li>
 </ul>
-
 <h1 id="ps">P.S.</h1>
-
 <p>This is just a basic proxy, very simple to install and use. If you are interested in a more functional and complex soltion, you may check out <a href="https://github.com/StreisandEffect/streisand">Streisand Effect</a>.</p>
-
       </div>
     </div>
-
     <footer class="site-footer">
-
   <div class="wrapper">
-
-
     <div class="footer-col-wrapper">
-     
-
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          
           <li>
             <a href="https://github.com/AlexTikhonov"><i class="fa-brands fa-github"></i> <span class="username">Alex Tikhonov</span></a>
-
           </li>
-          
-
-          
         </ul>
       </div>
-
-     
     </div>
-
   </div>
-
 </footer>
-
-
   </body>
-
 </html>
