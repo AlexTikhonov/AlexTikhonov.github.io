@@ -27,8 +27,8 @@
 			<p> <code class="language-plaintext highlighter-rouge">curl https://alextikhonov.github.io/scripts/socks/ubuntu.txt | sudo bash</code> </p>
 			<p> If you would like to manually set port and/or password: </p>
 			<div class="language-bash highlighter-rouge">
-				<div class="highlight"> <pre class="highlight"><code><span class="nb">export   </span><span class="nv">PORT</span><span class="o">=</span>8080<span class="p">;</span>       <span class="nb">export       </span><span class="nv">PASSWORD</span><span class="o">=</span>mypass        curl
-							https://alextikhonov.github.io/scripts/socks/ubuntu.txt |  <span class="nb">sudo</span> <span class="nt">--preserve-env</span> bash  </code></pre> </div>
+				<div class="highlight"> <pre class="highlight"><code>export PORT=8080; export PASSWORD=mypass
+curl https://selivan.github.io/socks.txt | sudo --preserve-env bash</code></pre> </div>
 			</div>
 			<p> This creates self-hosted <a href="https://en.wikipedia.org/wiki/SOCKS">SOCKS5</a> server powered by <a href="http://www.inet.no/dante/">Dante</a>. Supported Linux distributions: </p>
 			<ul>
